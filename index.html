@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="addItem(event)">
+      <label for="item_name">Item Name</label>
+      <input id="item_name" type="text" /><br />
+      <label for="item_description">Description</label>
+      <input id="item_description" type="text" /><br />
+      <label for="item_price">Price</label>
+      <input id="item_price" type="number" /><br />
+      <label for="item_quantity">Quantity</label>
+      <input id="item_quantity" type="number" /><br />
+      <button type="submit">Add Item</button>
+    </form>
+    <ul id="item_list"></ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
